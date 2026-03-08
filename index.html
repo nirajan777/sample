@@ -1,17 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-    <title>My First GitHub Repo</title>
-      <link rel="stylesheet" href="style.css">
-      </head>
-      <body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dynamic Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="#" class="nav-link" data-section="home">Home</a></li>
+                <li><a href="#" class="nav-link" data-section="explore">Explore</a></li>
+                <li><a href="#" class="nav-link" data-section="contacts">Contacts</a></li>
+                <li><a href="#" class="nav-link" data-section="support">Support</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <h1>Welcome to My GitHub Repository 🚀</h1>
-          <p>This project is hosted on GitHub.</p>
+    <main>
+        <section id="home" class="section active">
+            <h1>Welcome to Home</h1>
+            <p>This is the home section of your website.</p>
+        </section>
 
-            <button onclick="sayHello()">Click Me</button>
+        <section id="explore" class="section">
+            <h1>Explore</h1>
+            <p>Discover exciting content here.</p>
+        </section>
 
-              <script src="script.js"></script>
-              </body>
-              </html>
+        <section id="contacts" class="section">
+            <h1>Contacts</h1>
+            <p>Get in touch with us!</p>
+        </section>
+
+        <section id="support" class="section">
+            <h1>Support</h1>
+            <p>Need help? We are here for you.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Dynamic Website</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
