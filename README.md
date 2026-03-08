@@ -1,4 +1,4 @@
-# My Dynamic Website
+# Nirajan Luitel
 
 This is a simple dynamic website built with HTML, CSS, and JavaScript.
 
