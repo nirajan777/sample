@@ -2,216 +2,221 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 /* Reset */
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Body */
-body{
-background:linear-gradient(135deg,#eef2f7,#d9e4f5);
-color:#333;
-line-height:1.6;
+body {
+    background: linear-gradient(135deg, #616a75, #4c5665);
+    color: #333;
+    line-height: 1.6;
 }
 
 /* Header */
-header{
-background:linear-gradient(90deg,#005bea,#00c6fb);
-padding:18px 0;
-box-shadow:0 3px 10px rgba(0,0,0,0.2);
+header {
+    background: linear-gradient(90deg, #005bea, #00c6fb);
+    padding: 18px 0;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Menu */
-nav ul.menu{
-list-style:none;
-display:flex;
-justify-content:center;
-gap:35px;
+nav ul.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
 }
 
-nav ul.menu li a{
-color:white;
-text-decoration:none;
-font-weight:500;
-font-size:17px;
-padding:8px 12px;
-border-radius:6px;
-transition:all 0.3s ease;
+nav ul.menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
 }
 
-nav ul.menu li a:hover{
-background:rgba(255,255,255,0.2);
-color:#ffd700;
+nav ul.menu li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffd700;
 }
 
 /* Main Layout */
-main{
-padding:40px;
-min-height:70vh;
-display:flex;
-justify-content:center;
+main {
+    padding: 40px;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
 }
 
 /* Sections */
-.section{
-display:none;
-background:white;
-padding:35px;
-border-radius:12px;
-max-width:900px;
-width:100%;
-box-shadow:0 8px 25px rgba(0,0,0,0.1);
-animation:fade 0.4s ease;
+.section {
+    display: none;
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    max-width: 900px;
+    width: 100%;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    animation: fade 0.4s ease;
 }
 
-.section.active{
-display:block;
+.section.active {
+    display: block;
 }
 
 /* Headings */
 
-h1{
-color:#005bea;
-font-size:32px;
-margin-bottom:10px;
-border-left:6px solid #005bea;
-padding-left:10px;
+h1 {
+    color: #005bea;
+    font-size: 32px;
+    margin-bottom: 10px;
+    border-left: 6px solid #005bea;
+    padding-left: 10px;
 }
 
-h2{
-color:#ff6600;
-margin-top:20px;
-margin-bottom:8px;
-font-size:24px;
+h2 {
+    color: #ff6600;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-size: 24px;
 }
 
-h3{
-color:#00a86b;
-margin-top:15px;
-margin-bottom:6px;
-font-size:20px;
+h3 {
+    color: #00a86b;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-size: 20px;
 }
 
 /* Text */
-p{
-margin-bottom:12px;
-font-size:16px;
+p {
+    margin-bottom: 12px;
+    font-size: 16px;
 }
 
 /* Lists */
-ul{
-margin-left:20px;
-margin-top:10px;
+ul {
+    margin-left: 20px;
+    margin-top: 10px;
 }
 
 /* Links */
-a{
-color:#005bea;
+a {
+    color: #005bea;
 }
 
-a:hover{
-text-decoration:underline;
+a:hover {
+    text-decoration: underline;
 }
 
 /* Buttons */
-button{
-background:linear-gradient(90deg,#ff512f,#dd2476);
-border:none;
-color:white;
-padding:10px 20px;
-border-radius:6px;
-font-size:15px;
-cursor:pointer;
-transition:transform 0.2s,box-shadow 0.2s;
+button {
+    background: linear-gradient(90deg, #ff512f, #dd2476);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
-button:hover{
-transform:translateY(-2px);
-box-shadow:0 4px 10px rgba(0,0,0,0.2);
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Form Styling */
 form input,
-form textarea{
-width:100%;
-padding:10px;
-margin-top:5px;
-margin-bottom:15px;
-border:1px solid #ccc;
-border-radius:6px;
-font-size:14px;
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
 }
 
 form input:focus,
-form textarea:focus{
-outline:none;
-border-color:#005bea;
-box-shadow:0 0 5px rgba(0,91,234,0.3);
+form textarea:focus {
+    outline: none;
+    border-color: #005bea;
+    box-shadow: 0 0 5px rgba(0, 91, 234, 0.3);
 }
 
 /* Footer */
-footer{
-background:#1f2937;
-color:white;
-text-align:center;
-padding:18px 0;
-font-size:14px;
-margin-top:30px;
+footer {
+    background: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 18px 0;
+    font-size: 14px;
+    margin-top: 30px;
 }
 
 /* Animation */
-@keyframes fade{
-from{
-opacity:0;
-transform:translateY(10px);
-}
-to{
-opacity:1;
-transform:translateY(0);
-}
-}
-.active-link{
-border-bottom:2px solid yellow;
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.news-card{
-background:#f4f6fa;
-padding:15px;
-margin-top:15px;
-border-radius:8px;
-box-shadow:0 3px 8px rgba(0,0,0,0.1);
+.active-link {
+    border-bottom: 2px solid yellow;
 }
 
-.comment{
-background:#f9f9f9;
-padding:10px;
-margin-top:10px;
-border-radius:6px;
+.news-card {
+    background: #f4f6fa;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
 }
 
-.dark-mode{
-background:#121212;
-color:white;
+.comment {
+    background: #f9f9f9;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 6px;
 }
 
-.dark-mode .section{
-background:#1e1e1e;
-color:white;
+.dark-mode {
+    background: #121212;
+    color: white;
 }
-.social-links a{
-    margin:10px;
-    padding:15px 18px;
-    font-size:28px;   /* makes icons bigger */
-    background:#222;
-    color:white;
-    text-decoration:none;
-    border-radius:8px;
-    display:inline-block;
+
+.dark-mode .section {
+    background: #1e1e1e;
+    color: white;
 }
-.social-links a:hover{
-    background:#0077ff;
-    transform:scale(1.2);
-    transition:0.3s;
+
+.social-links a {
+    margin: 10px;
+    padding: 15px 18px;
+    font-size: 28px;
+    /* makes icons bigger */
+    background: #222;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.social-links a:hover {
+    background: #0077ff;
+    transform: scale(1.2);
+    transition: 0.3s;
 }
