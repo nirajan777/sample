@@ -234,7 +234,7 @@ footer {
 }
 
 .social-links a[href*="facebook"]:hover {
-    background: #1877f2;
+    background: #0c72f8;
     transform: scale(1.2);
 }
 
@@ -245,7 +245,7 @@ footer {
 }
 
 .social-links a[href*="instagram"]:hover {
-    background: #E1306C;
+    background: #d81053;
     transform: scale(1.2);
 }
 
@@ -256,6 +256,6 @@ footer {
 }
 
 .social-links a[href*="tiktok"]:hover {
-    background: #130606;
+    background: #290202;
     transform: scale(1.2);
 }
