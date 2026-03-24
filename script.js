@@ -3,21 +3,21 @@ const links = document.querySelectorAll(".nav-link");
 const sections = document.querySelectorAll(".section");
 
 links.forEach(link => {
-link.addEventListener("click", (e) => {
-e.preventDefault();
+    link.addEventListener("click", (e) => {
+        e.preventDefault();
 
-const target = link.dataset.section;
+        const target = link.dataset.section;
 
-// remove active section
-sections.forEach(sec => sec.classList.remove("active"));
+        // remove active section
+        sections.forEach(sec => sec.classList.remove("active"));
 
-// show selected section
-document.getElementById(target).classList.add("active");
+        // show selected section
+        document.getElementById(target).classList.add("active");
 
-// highlight active menu
-links.forEach(l => l.classList.remove("active-link"));
-link.classList.add("active-link");
-});
+        // highlight active menu
+        links.forEach(l => l.classList.remove("active-link"));
+        link.classList.add("active-link");
+    });
 });
 
 
@@ -30,40 +30,44 @@ const exploreSection = document.getElementById("explore");
 exploreSection.appendChild(newsContainer);
 
 const news = [
-{
-title: "AI Technology Expanding Worldwide",
-text: "Artificial intelligence is rapidly transforming industries including healthcare, education and transportation."
-},
-{
-title: "New Smartphone Innovations",
-text: "Tech companies are competing to launch advanced smartphones with powerful AI chips and satellite connectivity."
-},
-{
-title: "Global Political Tensions",
-text: "Countries around the world continue to monitor geopolitical conflicts and international diplomacy."
-},
-{
-title: "Space Exploration Updates",
-text: "Scientists are preparing new missions to explore Mars and the outer planets."
-}
+    {
+        title: "Technology News",
+        text: "Stay updated with the latest tech trends including AI, software releases, gadgets, and breakthroughs in science."
+    },
+    {
+        title: "AI Technology Expanding Worldwide",
+        text: "Artificial intelligence is rapidly transforming industries including healthcare, education and transportation."
+    },
+    {
+        title: "New Smartphone Innovations",
+        text: "Tech companies are competing to launch advanced smartphones with powerful AI chips and satellite connectivity."
+    },
+    {
+        title: "Global Political Tensions",
+        text: "Countries around the world continue to monitor geopolitical conflicts and international diplomacy."
+    },
+    {
+        title: "Space Exploration Updates",
+        text: "Scientists are preparing new missions to explore Mars and the outer planets."
+    }
 ];
 
-function loadNews(){
-newsContainer.innerHTML = "";
+function loadNews() {
+    newsContainer.innerHTML = "";
 
-news.forEach(item => {
+    news.forEach(item => {
 
-const card = document.createElement("div");
-card.classList.add("news-card");
+        const card = document.createElement("div");
+        card.classList.add("news-card");
 
-card.innerHTML = `
+        card.innerHTML = `
 <h3>${item.title}</h3>
 <p>${item.text}</p>
 `;
 
-newsContainer.appendChild(card);
+        newsContainer.appendChild(card);
 
-});
+    });
 
 }
 
@@ -74,35 +78,35 @@ loadNews();
 
 const form = document.getElementById("comment-form");
 
-if(form){
+if (form) {
 
-const commentBox = document.createElement("div");
-commentBox.id = "comments";
-form.after(commentBox);
+    const commentBox = document.createElement("div");
+    commentBox.id = "comments";
+    form.after(commentBox);
 
-form.addEventListener("submit",(e)=>{
+    form.addEventListener("submit", (e) => {
 
-e.preventDefault();
+        e.preventDefault();
 
-const name = document.getElementById("name").value;
-const message = document.getElementById("message").value;
+        const name = document.getElementById("name").value;
+        const message = document.getElementById("message").value;
 
-const comment = document.createElement("div");
-comment.classList.add("comment");
+        const comment = document.createElement("div");
+        comment.classList.add("comment");
 
-comment.innerHTML = `
+        comment.innerHTML = `
 <strong>${name}</strong>
 <p>${message}</p>
 <hr>
 `;
 
-commentBox.prepend(comment);
+        commentBox.prepend(comment);
 
-form.reset();
+        form.reset();
 
-alert("Thank you for your feedback!");
+        alert("Thank you for your feedback!");
 
-});
+    });
 
 }
 
@@ -111,15 +115,15 @@ alert("Thank you for your feedback!");
 
 const messageField = document.getElementById("message");
 
-if(messageField){
+if (messageField) {
 
-const counter = document.createElement("small");
-counter.innerText = "0 characters";
-messageField.after(counter);
+    const counter = document.createElement("small");
+    counter.innerText = "0 characters";
+    messageField.after(counter);
 
-messageField.addEventListener("input", () => {
-counter.innerText = messageField.value.length + " characters";
-});
+    messageField.addEventListener("input", () => {
+        counter.innerText = messageField.value.length + " characters";
+    });
 
 }
 
@@ -135,5 +139,5 @@ darkBtn.style.right = "20px";
 document.body.appendChild(darkBtn);
 
 darkBtn.addEventListener("click", () => {
-document.body.classList.toggle("dark-mode");
+    document.body.classList.toggle("dark-mode");
 });
