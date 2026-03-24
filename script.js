@@ -31,6 +31,14 @@ exploreSection.appendChild(newsContainer);
 
 const news = [
     {
+        title: "Global Updates",
+        text: "Follow major global events, politics, and conflicts happening around the world, including developments in ongoing wars and peace."
+    },
+    {
+        title: "Entertainment & Social Media",
+        text: "Discover viral stories, trending videos, and social media highlights from platforms like YouTube, TikTok, and Instagram."
+    },
+    {
         title: "Technology News",
         text: "Stay updated with the latest tech trends including AI, software releases, gadgets, and breakthroughs in science."
     },
