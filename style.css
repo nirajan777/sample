@@ -204,6 +204,8 @@ footer {
 }
 
 .social-links a {
+    color: tomato;
+    background: #02702b;
     margin: 10px;
     padding: 15px 18px;
     font-size: 28px;
@@ -232,7 +234,7 @@ footer {
 }
 
 .social-links a[href*="facebook"]:hover {
-    background: #0a66c2;
+    background: #dde3e9;
     transform: scale(1.2);
 }
 
@@ -249,11 +251,11 @@ footer {
 
 /* TikTok - White and Purple */
 .social-links a[href*="tiktok"] {
-    background: #ffffff;
-    color: #6D28D9;
+    background: #130606;
+    color: #d421c2;
 }
 
 .social-links a[href*="tiktok"]:hover {
-    background: #f0f0f0;
+    background: #e4dcdc;
     transform: scale(1.2);
 }
