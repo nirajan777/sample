@@ -10,8 +10,8 @@ This is a simple dynamic website built with HTML, CSS, and JavaScript.
 
 ## How to Run
 
-1. Clone or download this repository.
-2. Open `index.html` in your browser.
+1. Open `index.html` in your browser.
+2. search 'luitelnirajan.com.np'in your browser
 
 ```bash
 git clone <your-repo-url>
